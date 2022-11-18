@@ -1,0 +1,97 @@
+[
+    {
+        "Nombre":   "Carta-cohete" ,
+        "Imagen":   "Carta-cohete.jpg",
+        "Pareja":   "Carta-cohete"
+    }
+    ,
+    {
+        "Nombre":   "Carta-cohete2" ,
+        "Imagen":   "Carta-cohete2.jpg",
+        "Pareja":   "Carta-cohete"
+    }
+    ,
+    {
+        "Nombre":   "Carta-galleta" ,
+        "Imagen":   "Carta-galleta.jpg",
+        "Pareja":   "Carta-galleta"
+    }
+    ,
+    {
+        "Nombre":   "Carta-galleta2" ,
+        "Imagen":   "Carta-galleta2.jpg",
+        "Pareja":   "Carta-galleta"
+    }
+    ,
+    {
+        "Nombre":   "carta-regalo" ,
+        "Imagen":   "carta-regalo.jpg",
+        "Pareja":   "carta-regalo"
+    }
+    ,
+    {
+        "Nombre":   "carta-regalo2" ,
+        "Imagen":   "carta-regalo2.jpg",
+        "Pareja":   "carta-regalo"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaBola" ,
+        "Imagen":   "Carta-SantaBola.jpg",
+        "Pareja":   "Carta-SantaBola"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaBola2" ,
+        "Imagen":   "Carta-SantaBola2.jpg",
+        "Pareja":   "Carta-SantaBola"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaCohete" ,
+        "Imagen":   "Carta-SantaCohete.jpg",
+        "Pareja":   "Carta-SantaCohete"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaCohete2" ,
+        "Imagen":   "Carta-SantaCohete2.jpg",
+        "Pareja":   "Carta-SantaCohete"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaCool" ,
+        "Imagen":   "Carta-SantaCool.jpg",
+        "Pareja":   "Carta-SantaCool"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaCool2" ,
+        "Imagen":   "Carta-SantaCool2.jpg",
+        "Pareja":   "Carta-SantaCool"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaSkater" ,
+        "Imagen":   "Carta-SantaSkater.jpg",
+        "Pareja":   "Carta-SantaSkater"
+    }
+    ,
+    {
+        "Nombre":   "Carta-SantaSkater2" ,
+        "Imagen":   "Carta-SantaSkater2.jpg",
+        "Pareja":   "Carta-SantaSkater"
+    }
+    ,
+    {
+        "Nombre":   "Carta-snowman" ,
+        "Imagen":   "Carta-snowman.jpg",
+        "Pareja":   "Carta-snowman"
+    }
+    ,
+    {
+        "Nombre":   "Carta-snowman2" ,
+        "Imagen":   "Carta-snowman2.jpg",
+        "Pareja":   "Carta-snowman"
+    }
+]
