@@ -1,0 +1,97 @@
+[
+    {
+        "Nombre":   "bat" ,
+        "Imagen":   "bat.jpg",
+        "Pareja":   "bat"
+    }
+    ,
+    {
+        "Nombre":   "bat2" ,
+        "Imagen":   "bat2.jpg",
+        "Pareja":   "bat"
+    }
+    ,
+    {
+        "Nombre":   "calabazaMalvada" ,
+        "Imagen":   "calabazaMalvada.jpg",
+        "Pareja":   "calabazaMalvada"
+    }
+    ,
+    {
+        "Nombre":   "calabazaMalvada2" ,
+        "Imagen":   "calabazaMalvada2.jpg",
+        "Pareja":   "calabazaMalvada"
+    }
+    ,
+    {
+        "Nombre":   "Calavera" ,
+        "Imagen":   "Calavera.jpg",
+        "Pareja":   "Calavera"
+    }
+    ,
+    {
+        "Nombre":   "Calavera2" ,
+        "Imagen":   "Calavera2.jpg",
+        "Pareja":   "Calavera"
+    }
+    ,
+    {
+        "Nombre":   "LibroSatanico" ,
+        "Imagen":   "LibroSatanico.jpg",
+        "Pareja":   "LibroSatanico"
+    }
+    ,
+    {
+        "Nombre":   "LibroSatanico2" ,
+        "Imagen":   "LibroSatanico2.jpg",
+        "Pareja":   "LibroSatanico"
+    }
+    ,
+    {
+        "Nombre":   "OjoSangre" ,
+        "Imagen":   "OjoSangre.jpg",
+        "Pareja":   "OjoSangre"
+    }
+    ,
+    {
+        "Nombre":   "OjoSangre2" ,
+        "Imagen":   "OjoSangre2.jpg",
+        "Pareja":   "OjoSangre"
+    }
+    ,
+    {
+        "Nombre":   "Scream" ,
+        "Imagen":   "Scream.jpg",
+        "Pareja":   "Scream"
+    }
+    ,
+    {
+        "Nombre":   "Scream2" ,
+        "Imagen":   "Scream2.jpg",
+        "Pareja":   "Scream"
+    }
+    ,
+    {
+        "Nombre":   "vela" ,
+        "Imagen":   "vela.jpg",
+        "Pareja":   "vela"
+    }
+    ,
+    {
+        "Nombre":   "vela2" ,
+        "Imagen":   "vela2.jpg",
+        "Pareja":   "vela"
+    }
+    ,
+    {
+        "Nombre":   "witchHat" ,
+        "Imagen":   "witchHat.jpg",
+        "Pareja":   "witchHat"
+    }
+    ,
+    {
+        "Nombre":   "witchHat2" ,
+        "Imagen":   "witchHat2.jpg",
+        "Pareja":   "witchHat"
+    }
+]
