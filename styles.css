@@ -9,6 +9,12 @@ body {
 background: linear-gradient(90deg, rgba(210,41,19,1) 25%, rgba(135,126,20,1) 55%, rgba(116,255,0,1) 100%);
 }
 
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* GRID BOARD */ /* GRID BOARD */ /* GRID BOARD */ 
 
 .grid {
@@ -32,7 +38,40 @@ background: linear-gradient(90deg, rgba(210,41,19,1) 25%, rgba(135,126,20,1) 55%
 
 .grid div:hover {
     border: 2px solid rgb(7, 7, 7);
+}
 
+
+/* style BOTÓN */ /* style BOTÓN */ /* style BOTÓN */
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+button {
+    background: #dd4a57;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+.stats {
+    color: #FFF;
+    font-size: 14pt;
+    margin: 20px 20px;
+    padding: 10px 2px;
+}
+
+.card-back {
+    transform: rotateY(180deg) rotateZ(50deg);
+    font-size: 28pt;
+    user-select: none;
+    text-align: center;
+    line-height: 100px;
+    background: #FDF8E6;
 }
 
 
@@ -40,7 +79,7 @@ background: linear-gradient(90deg, rgba(210,41,19,1) 25%, rgba(135,126,20,1) 55%
 
 
 #card1 {
-    background-image: "";
+    background-image: url("./Sprites-Cartas/Carta-cohete.jpg");
     background-size: contain;
 }
 #card2 {
