@@ -1,0 +1,97 @@
+[
+    {
+        "Nombre":   "chilling" ,
+        "Imagen":   "chilling.jpg",
+        "Pareja":   "chilling"
+    }
+    ,
+    {
+        "Nombre":   "chilling2" ,
+        "Imagen":   "chilling2.jpg",
+        "Pareja":   "chilling"
+    }
+    ,
+    {
+        "Nombre":   "clumsy" ,
+        "Imagen":   "clumsy.jpg",
+        "Pareja":   "clumsy"
+    }
+    ,
+    {
+        "Nombre":   "clumsy2" ,
+        "Imagen":   "clumsy2.jpg",
+        "Pareja":   "clumsy"
+    }
+    ,
+    {
+        "Nombre":   "dancing" ,
+        "Imagen":   "dancing.jpg",
+        "Pareja":   "dancing"
+    }
+    ,
+    {
+        "Nombre":   "dancing2" ,
+        "Imagen":   "dancing2.jpg",
+        "Pareja":   "dancing"
+    }
+    ,
+    {
+        "Nombre":   "groovy" ,
+        "Imagen":   "groovy.jpg",
+        "Pareja":   "groovy"
+    }
+    ,
+    {
+        "Nombre":   "groovy2" ,
+        "Imagen":   "groovy2.jpg",
+        "Pareja":   "groovy"
+    }
+    ,
+    {
+        "Nombre":   "jumping" ,
+        "Imagen":   "jumping.jpg",
+        "Pareja":   "jumping"
+    }
+    ,
+    {
+        "Nombre":   "jumping2" ,
+        "Imagen":   "jumping2.jpg",
+        "Pareja":   "jumping"
+    }
+    ,
+    {
+        "Nombre":   "laying" ,
+        "Imagen":   "laying.jpg",
+        "Pareja":   "laying"
+    }
+    ,
+    {
+        "Nombre":   "laying2" ,
+        "Imagen":   "laying2.jpg",
+        "Pareja":   "laying"
+    }
+    ,
+    {
+        "Nombre":   "Petting" ,
+        "Imagen":   "Petting.jpg",
+        "Pareja":   "Petting"
+    }
+    ,
+    {
+        "Nombre":   "Petting2" ,
+        "Imagen":   "Petting2.jpg",
+        "Pareja":   "Petting"
+    }
+    ,
+    {
+        "Nombre":   "selfie" ,
+        "Imagen":   "selfie.jpg",
+        "Pareja":   "selfie"
+    }
+    ,
+    {
+        "Nombre":   "selfie2" ,
+        "Imagen":   "selfie2.jpg",
+        "Pareja":   "selfie"
+    }
+]
