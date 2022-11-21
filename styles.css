@@ -1,0 +1,1169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.popup{
+    background-color: lightblue;
+    width: 400px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 35%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  20px 110px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #ffffff;
+    background: #03549a;    
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;        
+}
+.popup h2{
+  margin-top: 30px;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    background: rgb(228,220,94);
+    background: linear-gradient(90deg, rgba(228,220,94,1) 0%, rgba(91,90,79,1) 95%);
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* GRID BOARD */ /* GRID BOARD */ /* GRID BOARD */ 
+
+.grid {
+    
+    display: inline-block;
+    text-align: center;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    align-self: center;
+}
+
+.grid div {
+    display: flex;
+    flex-grow: 3;
+    border-radius: 15px;
+}
+
+/* Filas */
+
+#filas{
+    width: auto;
+    height: 160px;
+}
+
+
+
+
+/* style BOTÓN */ /* style BOTÓN */ /* style BOTÓN */
+
+#dificultad{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: left;
+}
+#dificultad label{
+  margin: 10px;
+  color: white;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+.moves{
+    font-size: 30px;
+}
+button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-color: #c74545;
+    border-radius: 5px;
+    margin: 20px 30px;
+    padding: 15px 15px;
+    letter-spacing: 3px;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+
+.jugando {
+    background: #c74545;
+    color: rgb(214, 209, 209);
+    box-shadow: 0 0 10px #c74545, 0 0 40px #c74545, 0 0 80px #c74545;
+    transition-delay: 0.2;
+}
+
+
+button:hover {
+    background: #c74545;
+    color: rgb(214, 209, 209);
+    box-shadow: 0 0 10px #c74545, 0 0 40px #c74545, 0 0 80px #c74545;
+    transition-delay: 0.2;
+}
+
+#listacolecciones {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-color: #176294;
+    border-radius: 5px;
+    margin: 20px 30px;
+    padding: 15px 15px;
+    letter-spacing: 3px;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+
+
+#listacolecciones:hover {
+    background: #176294;
+    color: rgb(214, 209, 209);
+    box-shadow: 0 0 10px #176294, 0 0 40px #176294, 0 0 80px #176294;
+    transition-delay: 0.2;
+}
+
+.stats {
+    color: #FFF;
+    font-size: 14pt;
+    margin: 20px 20px;
+    padding: 10px 2px;
+}
+
+.card-back {
+    transform: rotateY(180deg) rotateZ(50deg);
+    font-size: 28pt;
+    user-select: none;
+    text-align: center;
+    line-height: 100px;
+    background: #FDF8E6;
+}
+
+
+/* style IMG CARDS *
+/ /* style IMG CARDS */ /* style IMG CARDS */
+
+
+#card1 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-cohete.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card2 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-cohete2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card3 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/carta-regalo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card4 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/carta-regalo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card5 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-galleta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+    
+}
+#card6 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-galleta2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card7 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-SantaBola.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card8 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-SantaBola2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card9 {
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-SantaCohete.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card10 { 
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-SantaCohete2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card11 {    
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-SantaCool.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card12 {    
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-SantaCool2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card13 {    
+    background-color: rgb(255,248,165);
+
+    background-image: url("./Sprites-Cartas/Carta-SantaSkater.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card14 {    
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-SantaSkater2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card15 {    
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-snowman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+#card16 {   
+    background-color: rgb(255,248,165);
+    background-image: url("./Sprites-Cartas/Carta-snowman2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+
+/* responsive */ /* responsive */ /* responsive */
+
+
+/* responsive smartphone pointbreak*/
+
+@media (max-width: 900px) { 
+
+
+    .grid {
+    
+        display: inline-block;       
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        
+    }
+    
+    .grid div {
+        display: flex; 
+        border-radius: 15px;
+    }
+
+    #filas{
+        width: auto;
+        height: auto;
+    }
+
+    #card1 {
+        background-color: rgb(255,248,165);
+
+
+        background-image: url("./Sprites-Cartas/Carta-cohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card2 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-cohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card3 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card4 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card5 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        
+    }
+    #card6 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card7 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card8 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card9 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaCohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card10 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card11 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card12 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card13 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card14 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card15 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    #card16 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    
+
+
+    .controles {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+    .moves{
+        font-size: 25px;
+    }
+    button {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #c74545;
+        width: 100px;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+        
+    }
+    
+    button:hover {
+        background: #c74545;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #c74545, 0 0 40px #c74545, 0 0 80px #c74545;
+        transition-delay: 0.2;
+    }
+    
+    #btn-coleccion {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #176294;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+    
+    }
+    
+    #btn-coleccion:hover {
+        background: #176294;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #176294, 0 0 40px #176294, 0 0 80px #176294;
+        transition-delay: 0.2;
+    }
+
+ }
+
+ @media (max-width: 650px) { 
+
+
+    .grid {
+    
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        
+    }
+    
+    .grid div {
+        display: flex; 
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    #filas{
+        width: 400px;
+        height: auto;
+    }
+
+    #card1 {
+        background-color: rgb(255,248,165);
+
+
+        background-image: url("./Sprites-Cartas/Carta-cohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card2 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-cohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card3 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card4 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card5 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+        
+    }
+    #card6 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card7 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card8 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card9 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaCohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card10 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card11 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card12 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card13 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card14 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card15 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card16 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    
+
+
+    .controles {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+    .moves{
+        font-size: 20px;
+    }
+    button {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #c74545;
+        width: 100px;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+        
+    }
+    
+    button:hover {
+        background: #c74545;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #c74545, 0 0 40px #c74545, 0 0 80px #c74545;
+        transition-delay: 0.2;
+    }
+    
+    #btn-coleccion {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #176294;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+    
+    }
+    
+    #btn-coleccion:hover {
+        background: #176294;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #176294, 0 0 40px #176294, 0 0 80px #176294;
+        transition-delay: 0.2;
+    }
+
+ }
+
+ @media (max-width: 550px) { 
+
+
+    .grid {
+    
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        
+    }
+    
+    .grid div {
+        display: flex; 
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    #filas{
+        width: 400px;
+        height: auto;
+    }
+
+    #dificultad{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .controles {
+        display: block;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    #card1 {
+        background-color: rgb(255,248,165);
+
+
+        background-image: url("./Sprites-Cartas/Carta-cohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card2 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-cohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card3 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card4 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/carta-regalo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card5 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+        
+    }
+    #card6 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-galleta2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card7 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card8 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaBola2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card9 {
+        background-color: rgb(255,248,165);
+
+        background-image: url("./Sprites-Cartas/Carta-SantaCohete.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card10 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCohete2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card11 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card12 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaCool2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card13 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card14 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-SantaSkater2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card15 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #card16 
+    {   background-color: rgb(255,248,165);
+
+         background-image: url("./Sprites-Cartas/Carta-snowman2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+    }
+    
+    .moves{
+        font-size: 30px;
+    }
+
+    button {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #c74545;
+        width: 100px;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+        
+    }
+    
+    button:hover {
+        background: #c74545;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #c74545, 0 0 40px #c74545, 0 0 80px #c74545;
+        transition-delay: 0.2;
+    }
+    
+    #btn-coleccion {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-color: #176294;
+        border-radius: 5px;
+        margin: 20px 30px;
+        padding: 15px 15px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        border: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+    
+    }
+    
+    #btn-coleccion:hover {
+        background: #176294;
+        color: rgb(214, 209, 209);
+        box-shadow: 0 0 10px #176294, 0 0 40px #176294, 0 0 80px #176294;
+        transition-delay: 0.2;
+    }
+
+ }
